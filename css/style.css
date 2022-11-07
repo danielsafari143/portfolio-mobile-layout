@@ -267,11 +267,7 @@ li {
 }
 
 .langages {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   width: 147px;
-  gap: 10px;
 }
 
 .container .langages p {
