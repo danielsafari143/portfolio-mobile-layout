@@ -267,7 +267,23 @@ li {
 }
 
 .langages {
-  width: 147px;
+  width:"";
+}
+.html {
+  float: left;
+  width: 30px;
+}
+
+.css {
+  float: left;
+  margin-left: 10px;
+  width: 30px;
+}
+
+.javascript {
+  float: left;
+  margin-left: 10px;
+  width: 50px;
 }
 
 .container .langages p {
