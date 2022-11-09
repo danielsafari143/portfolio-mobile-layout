@@ -228,25 +228,36 @@
             </div>
         </div>
 
-        <form>
-            <ul>
-                <h1>Contact me</h1>
-                <p>If you have an application y ou are interested in developing,
+            <section>
+            <h1 class="contact">Contact me</h1>
+                <p class="paragraph">If you have an application y ou are interested in developing,
                     a feature that you need built or   a project that needs 
                     coding. I’d love to help with it 
                 </p>
-                <li> 
-                    <input type="text" max="30" name="full-name" placeholder="full name">
-                </li>
-               <li>
-                    <input type="email" name="user-email" placeholder="email">
-               </li>
-               <li>
-                    <textarea max="500" placeholder="message" ></textarea>
-               </li>
-               <button>Get in touch</button>
-            </ul>
-        </form>
-    </div>
-</body>
-</html>
+            </section>
+
+            <form class="form-block">
+                <section>
+                      <ul class="form-container">
+                        <li class="input-name input-email-li">
+                            <input  class="input-email" type="text" name="name" id="name" maxlength="30" placeholder="safari hamuli" required>
+                        </li>
+                        <li class="input-email-li">
+                            <input class="input-email" type="email" name="email" id="email" placeholder="safari@gmail.com" required>
+                            
+                        </li>
+                        <li class="input-email-li">
+                            <textarea class="text-area" name="text_area" id="text_area" cols="30" rows="10" maxlength="500"
+                            placeholder="Enter your message here" required></textarea>
+                        </li>
+                        <li  class="submit-button input-email-li">
+                            <button class="form-btn" type="submit">
+                                Get in touch
+                            </button><br>
+                            <small></small>
+                        </li>
+                    </ul>
+               </section>
+             </form>
+            </body>
+            </html>
