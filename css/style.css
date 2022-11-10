@@ -12,6 +12,10 @@ html {
   align-items: center;
 }
 
+.nav-menu {
+  display: none;
+}
+
 .centered-text {
   background: url("../img/background.png") 100% / 100%;
   background-position: top;
@@ -50,7 +54,7 @@ html {
   color: #172b4d;
 }
 
-.headline p {
+.elt-2 {
   font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -58,6 +62,8 @@ html {
   line-height: 24px;
   color: #344563;
   width: 327px;
+  margin-top: 50px;
+  padding-top: 20px;
 }
 
 .header-img {
@@ -112,18 +118,13 @@ li {
   margin-bottom: 10px;
 }
 
-.elt-2 {
-  margin-top: 50px;
-  padding-top: 20px;
-}
-
 .container {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto;
   justify-content: center;
   row-gap: 100px;
-  background-color: #b3bac5;
+  background-color: #e5e5e5;
   padding-top: 100px;
   margin-top: 100px;
 }
@@ -135,6 +136,10 @@ li {
   row-gap: 100px;
   justify-items: center;
   justify-content: center;
+  width: 100%;
+  background-color: #e5e5e5;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .container .project .item {
@@ -142,7 +147,7 @@ li {
   border-radius: 16px;
   padding: 10px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: #fff;
 }
 
 .container .project .item1 .image {
@@ -407,7 +412,6 @@ h3 {
   line-height: 24px;
 }
 
-
 .langages-first-image {
   display: flex;
   flex-direction: row;
@@ -418,9 +422,11 @@ h3 {
   object-fit: contain;
   transform: rotate(90deg);
 }
-.skills-image{
+
+.skills-image {
   object-fit: contain;
 }
+
 .skills {
   margin-top: 20px;
   width: 100%;
@@ -430,7 +436,6 @@ h3 {
   flex-direction: row;
   justify-content: space-between;
 }
-
 
 .experiance .skills p {
   font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
@@ -591,16 +596,26 @@ h3 {
   padding-bottom: 180px;
   margin-top: 80px;
 }
+
 @media only screen and (min-width: 600px) {
   .centered-text {
-    background: url("../img/desktop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: none;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 55vw;
+  }
+
+  .headline {
+    background: url("../img/desktop.png");
+    background-size: contain;
     width: 100%;
-    border: 1px solid black;
+    height: 500px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .logo-element {
@@ -612,14 +627,6 @@ h3 {
     width: 100%;
     font-size: 10px;
     margin-top: 10px;
-  }
-
-  .headline {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
   .headline h1 {
@@ -639,7 +646,7 @@ h3 {
     font-size: 16px;
     line-height: 24px;
     color: #344563;
-    width: 920px;
+    width: 65vw;
   }
 
   .container {
@@ -824,5 +831,26 @@ h3 {
   .former-block {
     background-image: url("../img/form-back.png");
     background-size: contain;
+  }
+
+  .nav-menu {
+    display: flex;
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+    margin-right: 40px;
+  }
+
+  .nav-menu-link {
+    text-decoration: none;
+  }
+
+  .header-img {
+    display: none;
   }
 }
