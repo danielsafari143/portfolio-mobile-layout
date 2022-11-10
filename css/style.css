@@ -652,7 +652,6 @@ h3 {
     background-color: #fff;
     padding-top: 100px;
     margin-top: 100px;
-    border: 1px solid red;
   }
 
   .project {
@@ -662,7 +661,6 @@ h3 {
     row-gap: 100px;
     justify-items: center;
     justify-content: center;
-    border: 1px solid green;
   }
 
   .container .project .item {
@@ -741,7 +739,6 @@ h3 {
     height: 30px;
     display: flex;
     flex-direction: row;
-    border: 1px solid rgb(0, 255, 21);
   }
 
   .about {
