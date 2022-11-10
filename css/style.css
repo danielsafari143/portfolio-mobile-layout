@@ -572,3 +572,235 @@ h3 {
   padding-bottom: 180px;
   margin-top: 80px;
 }
+@media only screen and (min-width: 600px) {
+  .centered-text {
+    background: url("../img/desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .logo-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #6070ff;
+    width: 100%;
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .headline {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .headline h1 {
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    width: 920px;
+    color: #172b4d;
+  }
+
+  .headline p {
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    width: 920px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 100px;
+    background-color: #fff;
+    padding-top: 100px;
+    margin-top: 100px;
+    border: 1px solid red;
+  }
+
+  .project {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 100px;
+    justify-items: center;
+    justify-content: center;
+    border: 1px solid green;
+  }
+
+  .container .project .item {
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 80vw;
+    height: 490px;
+  }
+
+  .image-image {
+    content: url("../img/nature.png");
+    width: 50vw;
+    height: 448px;
+    object-fit: contain;
+  }
+
+  .container .project .item1 .image {
+    display: none;
+  }
+
+  .container .project .item1 .image1 {
+    display: none;
+  }
+
+  .image-image1 {
+    content: url("../img/desk-1.png");
+    width: 50vw;
+    height: 448px;
+    object-fit: contain;
+  }
+
+  .container .project .item1 .image4 {
+    display: none;
+  }
+
+  .image-image4 {
+    content: url("../img/desk-2.png");
+    width: 50vw;
+    height: 448px;
+    object-fit: contain;
+  }
+
+  .image-image3 {
+    content: url("../img/desk-3.png");
+    width: 50vw;
+    height: 448px;
+    object-fit: contain;
+  }
+
+  .container .project .item1 .image3 {
+    display: none;
+  }
+
+  .container .project .content {
+    width: 100%;
+  }
+
+  .text p {
+    width: 100%;
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .experiance {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(0, 255, 21);
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-content: space-between;
+    padding: 40px 10px 40px 10px;
+    gap: 10px;
+    background-color: white;
+    border-top-right-radius: 80px;
+    justify-items: center;
+    width: 80vw;
+  }
+
+  .about-image {
+    display: flex;
+    flex-direction: row;
+    width: 26vw;
+    gap: 10px;
+  }
+
+  .container .knowledge ul li {
+    margin-top: 10px;
+    width: 303px;
+    height: 100px;
+    list-style: none;
+    background: #f7f7f9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #253858;
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .skills-image {
+    object-fit: contain;
+  }
+
+  .skills-text {
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  }
+
+  .myself {
+    margin-right: 20px;
+  }
+
+  .knowledge {
+    width: 35vw;
+    color: #344563;
+  }
+
+  .container .myself p {
+    width: 40vw;
+    color: #344563;
+  }
+
+  form {
+    border-top-left-radius: 90px;
+    padding-top: 70px;
+    background: url("../img/form-back.png") 100% / 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #6070ff;
+  }
+
+  .title-section-paragraph {
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #ebebff;
+    text-align: center;
+    width: 56vw;
+  }
+}
