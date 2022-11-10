@@ -600,6 +600,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    border: 1px solid black;
   }
 
   .logo-element {
