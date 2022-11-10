@@ -1,5 +1,5 @@
 html {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 0;
   margin: 0;
   height: 2440px;
@@ -123,7 +123,7 @@ li {
   grid-template-rows: auto auto;
   justify-content: center;
   row-gap: 100px;
-  background-color: #B3BAC5;;
+  background-color: #b3bac5;
   padding-top: 100px;
   margin-top: 100px;
 }
@@ -135,7 +135,6 @@ li {
   row-gap: 100px;
   justify-items: center;
   justify-content: center;
- 
 }
 
 .container .project .item {
@@ -464,7 +463,7 @@ h3 {
   font-size: 40px;
   line-height: 52px;
   color: #fff;
-  font-family:'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
 }
 
 .paragraph {
@@ -485,7 +484,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   width: 68vw;
-  
   justify-content: center;
   padding-top: 180px;
 }
@@ -527,7 +525,7 @@ h3 {
   padding: 10px;
   margin-top: 10px;
   font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
-  color: #B3BAC5;
+  color: #b3bac5;
 }
 
 .form-btn {
@@ -561,7 +559,6 @@ h3 {
   padding: 0;
   margin: 0;
 }
-
 
 .former-block {
   background-image: url("../img/back-mob.png");
