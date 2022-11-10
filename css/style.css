@@ -407,6 +407,20 @@ h3 {
   line-height: 24px;
 }
 
+
+.langages-first-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.langages-first-image-image {
+  object-fit: contain;
+  transform: rotate(90deg);
+}
+.skills-image{
+  object-fit: contain;
+}
 .skills {
   margin-top: 20px;
   width: 100%;
