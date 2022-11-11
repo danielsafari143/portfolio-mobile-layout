@@ -148,6 +148,12 @@ li {
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff;
+  transition: padding 1s, box-shadow 1s;
+}
+
+.container .project .item:hover {
+  padding: 15px;
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .container .project .item1 .image {
