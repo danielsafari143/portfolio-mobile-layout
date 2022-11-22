@@ -1,8 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
 html {
   background-color: #fff;
   padding: 0;
   margin: 0;
   height: 2440px;
+}
+
+.spread {
+  height: 600px;
+  width: 100%;
+  background-color: #6070ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: left 8s, visibility 0.8s, opacity 0.4s;
+  display: none;
+}
+
+.spread button {
+  display: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.link,
+.close {
+  list-style: none;
+  display: none;
+}
+
+.close {
+  padding-right: 20px;
+  padding-top: 10px;
+  float: right;
+}
+
+.spread-lien {
+  font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+  display: block;
+  width: 100px;
+  padding-top: 10px;
+  margin: auto;
 }
 
 .header-element {
