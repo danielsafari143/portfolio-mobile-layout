@@ -450,7 +450,7 @@ button a {
   grid-template-columns: 325px;
   grid-template-rows: 1fr 1fr;
   justify-content: center;
-  gap: 5;
+  gap: 5px;
   background-color: white;
   border-top-right-radius: 80px;
   justify-items: center;
