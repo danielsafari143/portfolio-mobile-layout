@@ -69,24 +69,11 @@ After you're finished please remove all the comments and instructions!
 
 > VS Editor, Github web pages, HTML, CSS and Java.
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
 
 <details>
   <summary>Server</summary>
   <ul>
     <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -108,7 +95,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://tumirantsane.github.io/Portfolio-/)
+- [Live Demo Link](https://danielsafari143.github.io /)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +126,7 @@ Example command:
 
 Clone this repository to your desired folder:
 
-**``git clone https://github.com/TumiRantsane/Portfolio-.git``**
+**``git clone https://github.com/danielsafari143/portfolio-mobile-layout.git``**
 
 
 <!--
@@ -203,9 +190,9 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@TumiRnatsane](https://github.com/TumiRantsane)
-- Twitter: [@irantsane](https://twitter.com/irantsane)
-- LinkedIn: [Itumeleng Rantsane](https://www.linkedin.com/in/itumeleng-rantsane-552a44244/)
+- GitHub: [@danielsafari143](https://github.com/danielsafari143)
+- Twitter: [@danielsafari143](https://twitter.com/danielsafari143)
+- LinkedIn: [danielsafari143](https://www.linkedin.com/in/danielsafari143/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
