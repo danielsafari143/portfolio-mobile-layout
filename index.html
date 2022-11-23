@@ -9,24 +9,22 @@
 </head>
 <body>
     <header  class="header-element">
-        <div class="logo-element">
+        <div class="logo-element ">
              <a href="#"><img class="headline-image" src="img/My Logo.png" alt="Safari Hamuli"></a>
-             <nav>
-                 <img class="header-img" src="https://cdn-icons-png.flaticon.com/512/5107/5107718.png"/>
-                 <ul class="nav-menu">
-                    <li><a class="nav-menu-link" href="#main">Portfolio</a></li>
-                    <li><a class="nav-menu-link" href="#about">About</a></li>
-                    <li><a class="nav-menu-link" href="#footer">Contact</a></li>
+             <img class="header-img navbar__hamb" src="https://cdn-icons-png.flaticon.com/512/5107/5107718.png" alt="humberger"/>
+             <nav class="navbar__menu">
+                 <ul class="nav-menu navbar__menu__ul">
+                    <li class="navbar__menu__li">
+                        <a class="nav-menu-link navbar__menu__link" href="#main">Portfolio</a>
+                    </li>
+                    <li class="navbar__menu__li">
+                        <a class="nav-menu-link navbar__menu__link" href="#about">About</a>
+                    </li>
+                    <li class="navbar__menu__li">
+                        <a class="nav-menu-link navbar__menu__link" href="#footer">Contact</a>
+                    </li>
                  </ul>
                 </nav>
-                <div class="spread">
-                    <img class="close" src="img/Icon.png" alt="close">
-                    <ul class="link">
-                       <a class="spread-lien" href="#main"> <li  class="spread-link">Home</li> </a >
-                       <a class="spread-lien" href="#about"> <li  class="spread-link">About</li></a >
-                       <a class="spread-lien" href="#footer"> <li  class="spread-link">Contact</li></a >
-                    </ul>
-                </div>
         </div>
              <div class="headline">
                  <div class="centered-text">
@@ -49,7 +47,21 @@
                  </div>   
          </div>
      </header>
-     
+     <div class="popup">
+        <div>
+            <div class="title-section">
+                <h3 class="title">Tonic</h3>
+                <img class="close" src="cons.png" alt="close">
+            </div>
+    
+            <ul class="link"></ul>
+            <div>
+               <img src="pn" alt="">
+               <div class="text"></div>
+               <ul></ul>
+            </div>
+        </div>
+    </div>
     <div class="container" role="main" id="main">
         
         <div class="project">
@@ -85,9 +97,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn"> 
-                            <a class="btn-text" href="#">See Project</a>
-                        </button>
+                        <button class="btn card-1" onclick="popup('card-1')"><a class="btn-text" href="#">See Project</a></button>
                     </div>
                 </div>
             </div>
@@ -124,9 +134,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" >
-                            <a class="btn-text" href="#">See Project</a>
-                        </button>
+                        <button class="btn card-2"  onclick="popup('card-2')" ><a class="btn-text" href="#">See Project</a></button>
                     </div>
                 </div>
                 <img class="image-image1">
@@ -165,7 +173,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn card-3"  onclick="popup('card-3')" ><a class="btn-text" href="#">See Project</a></button>
                     </div>
                 </div>
             </div>
@@ -202,7 +210,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn card-4"  onclick="popup('card-4')"><a class="btn-text" href="#">See Project</a></button>
                     </div>
                 </div>
                 <img class="image-image3">
