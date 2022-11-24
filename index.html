@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header  class="header-element">
+    <header  class="header-element" id="header-el">
         <div class="logo-element">
              <a href="#"><img src="img/My Logo.png"></a>
              <nav>
@@ -41,18 +41,21 @@
                  </div>   
          </div>
      </header>
-     <div class="popup">
-        <div>
-            <div class="title-section">
-                <h3 class="title">Tonic</h3>
-                <img class="close" src="Icons.png" alt="close">
-            </div>
-    
-            <ul class="link"></ul>
+     <div class="smal-div">
+        <img id = "close" class="close" src="img/Icons.png" alt="close">
+        <div class="popup item1 item">
             <div>
-               <img src="" alt="">
-               <div class="text"></div>
-               <ul></ul>
+                <div class="title-section">
+                    <h3 class="title">Tonic</h3>
+                    
+                </div>
+        
+                <ul class="link"></ul>
+                <div>
+                <img src="" alt="">
+                <div class="text"></div>
+                <ul></ul>
+                </div>
             </div>
         </div>
      </div>
@@ -76,8 +79,7 @@
                         </div >
                         <div class="item3">
                             <div></div>
-                            <p>2015</p>
-                            
+                            <p>2015</p> 
                         </div>
                     </div>
                     <div class="text">
@@ -91,7 +93,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn card-1"><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn " id="card-1" onclick="spreadB('card-1')"><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
             </div>
@@ -128,10 +130,10 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn card-2" id="card-2" onclick="spreadB('card-2')" ><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
-                <img class="image-image1 card-2">
+                <img class="image-image1 ">
             </div>
 
 
@@ -167,7 +169,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn card-3" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn " id="card-3" onclick="spreadB('card-3')"><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
             </div>
@@ -204,7 +206,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn card-4" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn " id="card-4" onclick="spreadB('card-4')"><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
                 <div class="image3"></div>
