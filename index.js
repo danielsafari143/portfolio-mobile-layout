@@ -1,56 +1,55 @@
-content = {
-  'card-1':{
-      title:'Tonic',
-      project:['CANOPI' , 'Back end' , '2015'],
-      image:'img/desk-2.png',
-      text:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's `,
-      language:[`html`, `css` , `javascript`]
+const content = {
+  'card-1': {
+    title: 'Tonic',
+    project: ['CANOPI', 'Back end', '2015'],
+    image: 'img/desk-2.png',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s ',
+    language: ['html', 'css', 'javascript'],
   },
-  'card-2':{
-    title:`Tonicle`,
-    project:[`canopi` , `Back end` , `2015`],
-    image:'img/desk-3.png',
-    text:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    language:[`html`, `css` , `javascript`]
+  'card-2': {
+    title: 'Tonicle',
+    project: ['canopi', 'Back end', '2015'],
+    image: 'img/desk-3.png',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    language: ['html', 'css', 'javascript'],
   },
-  'card-3':{
-    title:`Tonicle`,
-    project:[`canopi` , `Back end` , `2015`],
-    image:'img/Portfolio.png',
-    text:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-    language:[`html`, `css` , `javascript`]
+  'card-3': {
+    title: 'Tonicle',
+    project: ['canopi', 'Back end', '2015'],
+    image: 'img/Portfolio.png',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    language: ['html', 'css', 'javascript'],
   },
-  'card-4':{
-    title:`Tonicle`,
-      project:[`canopi` , `Back end` , `2015`],
-      image:'img/desk-1.png',
-      text:`Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent`,
-      language:[`html`, `css` , `javascript`]
-},
- 
+  'card-4': {
+    title: 'Tonicle',
+    project: ['canopi', 'Back end', '2015'],
+    image: 'img/desk-1.png',
+    text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    language: ['html', 'css', 'javascript'],
+  },
+
 };
 
-function spreadB(arg){
-  let btn = document.getElementById(arg);
-  let spreads = document.querySelector('.popup');
-  let btns = document.getElementById('close');
- 
-  function disapear(){
-      spreads.style.display='none';
-      document.querySelector('.container').style.filter = 'blur(0px)';
-      document.getElementById('close').style.display = 'none';
+function spreadB(arg) {
+  const btn = document.getElementById(arg);
+  const spreads = document.querySelector('.popup');
+  const btns = document.getElementById('close');
+
+  function disapear() {
+    spreads.style.display = 'none';
+    document.querySelector('.container').style.filter = 'blur(0px)';
+    document.getElementById('close').style.display = 'none';
   }
 
-  function appear(){
-      spreads.style.display='block';
-      document.querySelector('.container').style.filter = 'blur(5px)'
-      document.getElementById('close').style.display = 'block';
+  function appear() {
+    spreads.style.display = 'block';
+    document.querySelector('.container').style.filter = 'blur(5px)';
+    document.getElementById('close').style.display = 'block';
   }
 
-  btn.addEventListener('click' , appear);
+  btn.addEventListener('click', appear);
 
- 
-  spreads.innerHTML =`<div class='main-pop'>
+  spreads.innerHTML = `<div class='main-pop'>
   <div class='title-section'>
       <h3 class='title'>${content[arg].title}</h3>
       
@@ -81,24 +80,21 @@ function spreadB(arg){
 
   btns.addEventListener('click', disapear);
 }
-for(let i = 1 ; i <= 4; i++){
-  spreadB( 'card-'+[i]+'');
+for (let i = 1; i <= 4; i += 1) {
+  spreadB(`card-${[i]}`);
 }
 
-function error(){
+function error() {
   document.querySelector('.error').style.display = 'block';
 }
 
-document.getElementById('myForm').addEventListener('submit', function (e) {
+document.getElementById('myForm').addEventListener('submit', (e) => {
   e.preventDefault();
-  let email = document.getElementById('myForm').elements[1].value;
+  const email = document.getElementById('myForm').elements[1].value;
 
-  if(email == email.toLowerCase()){
-       alert(email)
-       document.getElementById('myForm').submit()
-  }
-  else{
-      error()
+  if (email === email.toLowerCase()) {
+    document.getElementById('myForm').submit();
+  } else {
+    error();
   }
 });
-
