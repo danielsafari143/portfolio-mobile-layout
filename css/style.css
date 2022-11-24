@@ -1015,8 +1015,8 @@ h3 {
 }
 
 .error {
-  color: #fff;
+  color: rgb(247, 1, 1);
   text-align: center;
-  font-family: "Lucida Console", "Courier New", monospace;
+  font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
   display: none;
 }
