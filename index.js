@@ -1,80 +1,99 @@
-content = {
-  'card-1':{
-      title:"Tonic",
-      project:["CANOPI" , "Back end" , "2015"],
-      image:'img/Snapshoot Portfolio.png',
-      text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      language:["html", "css" , "javascript"]
+export const projects = [
+  {
+    name: 'Topic',
+    feature: 'CANOPY',
+    background: 'Back End Dev',
+    year: '2015',
+    image: 'images/tonic-project-desktop.svg',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://github.com/danielsafari143/portfolio-mobile-layout',
+    linkSource: 'https://github.com/danielsafari143/portfolio-mobile-layout',
   },
-  'card-2':{
-    title:"Tonicle",
-    project:["canopi" , "Back end" , "2015"],
-    image:'img/Snapshoot.png',
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language:["html", "css" , "javascript"]
+  {
+    name: 'Multi-Post Stories',
+    feature: 'CANOPY',
+    background: 'Back End Dev',
+    year: '2015',
+    image: 'images/multi-post-stories-project.svg',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://github.com/danielsafari143/portfolio-mobile-layout',
+    linkSource: 'https://github.com/danielsafari143/portfolio-mobile-layout',
   },
-  'card-3':{
-    title:"Tonicle",
-    project:["canopi" , "Back end" , "2015"],
-    image:'img/Portfolio.png',
-    text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    language:["html", "css" , "javascript"]
+  {
+    name: 'Facebook 360',
+    feature: 'FACEBOOK',
+    background: 'Full Stack Dev',
+    year: '2015',
+    image: 'images/facebook-360-project.svg',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://github.com/danielsafari143/portfolio-mobile-layout',
+    linkSource: 'https://github.com/danielsafari143/portfolio-mobile-layout',
   },
-  'card-4':{
-    title:"Tonicle",
-      project:["canopi" , "Back end" , "2015"],
-      image:'img/last.png',
-      text:"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-      language:["html", "css" , "javascript"]
-},
- 
-}
+  {
+    name: 'Uber',
+    feature: 'Uber',
+    background: 'Front End Developer',
+    year: '2018',
+    image: 'images/uber-navigation-project.svg',
+    description:
+      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    tool1: 'html',
+    tool2: 'css',
+    tool3: 'javascript',
+    linkLive: 'https://github.com/danielsafari143/portfolio-mobile-layout',
+    linkSource: 'https://github.com/danielsafari143/portfolio-mobile-layout',
+  },
+];
 
-function spreadB(arg){
-  let btn = document.getElementById(arg);
-  let spreads = document.querySelector('.popup');
-  let btns = document.getElementById('close');
-  console.log(btn)
-  function disapear(){
-      spreads.style.display='none';
-      document.querySelector('.container').style.filter = "blur(0px)"
-      document.getElementById('close').style.display = 'none'
-  }
-  function appear(){
-      spreads.style.display='block';
-      document.querySelector('.container').style.filter = "blur(5px)"
-      document.getElementById('close').style.display = 'block'
-  }
-  btn.addEventListener('click' , appear)
-  spreads.innerHTML =`<div class="main-pop">
-  <div class="title-section">
-      <h3 class="title">${content[arg].title}</h3>
-      
-  </div>
-  <ul class='link'>
-  <li class='itemse'>${content[arg].project[0]}</li>
-  <li class='items1'> <img src="img/Counter.png"> ${content[arg].project[1]}</li>
-  <li class='items1'> <img src="img/Counter.png"> ${content[arg].project[2]}</li>
-  </ul>
-  <div>
-     <img class="images" src="${content[arg].image}" alt="text">
-     <p class="text">
-          ${content[arg].text}
-     </p>
-     <ul class = "langages langs">
-        <li class="lang-item">${content[arg].language[0]}</li>
-        <li class="lang-item">${content[arg].language[1]}</li>
-        <li class="lang-item">${content[arg].language[2]}</li>
-     </ul>
-     <div id="link-buttons">
-      <a class="link-button-item btn-text" href="#">See live <img src='img/demo-icon.png'></a>
-      <a class="link-button-item ittem btn-text" href="#">See Source <img src='img/vct.png'> </a> 
+const startingPoint = document.querySelector('.hero');
+
+export function createModal() {
+  startingPoint.insertAdjacentHTML(
+    'afterend',
+    `<div class='overlay'>
+    <section class='modal'>
+    <div class='modal__header flex'>
+    <h2 class='project-name fw-700 fz-32 lh-44 clr-n-800'></h2>
+    <img  class='closeModal' src='images/close.svg' alt='close icon'></img>
     </div>
-  </div>
- </div>`;
-
-  btns.addEventListener('click', disapear) ;
-}
-for(let i = 1 ; i <= 4; i++){
-  spreadB( 'card-'+[i]+'')
+    <div class='modal__feature flex'>
+    <p class="project-feature fw-600 fz-13 lh-16 clr-n-600"></p>
+    <ul class=" flex">
+    <li class=" project-background fw-600 fz-13 lh-16 clr-n-500"></li>
+    <li class="project-year fw-600 fz-13 lh-16 clr-n-500"> </li>
+    </ul></div>
+    <div class='image-project'><img class='modal__image project-image' src='' alt='project image'></img></div>
+    <ul class='modal__dsc ul flex'>
+    <li class='modal__dsc__first'><p class='project-description fw-400 fz-15 lh-24 clr-n-600'></p></li>
+    <li class="modal__dsc__second flex">
+    <div class='flex'>
+    <p class="project-tool1 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
+    <p class="project-tool2 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
+    <p class="project-tool3 fw-500 fz-12 lh-16 clr-p-400 bg-p-50"></p>
+    </div>
+    <ul class='modal__btn ul flex'>
+    <li>
+    <a href='' class="btn link project-linkLive fw-500 fz-17 lh-24 clr-p-500 bg-white">See Live</a>
+    </li>
+    <li>
+    <a href='' class="btn link project-linkSource fw-500 fz-17 lh-24 clr-p-500 bg-white">See Source</a>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </section>
+    </div>`
+  );
 }
