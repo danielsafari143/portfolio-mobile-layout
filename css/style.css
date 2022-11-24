@@ -859,16 +859,14 @@ h3 {
   .popup {
     height: 730px;
     width: 343px;
-    margin-right: auto;
-    margin-left: 0;
     border-radius: 5px;
     background: white;
     box-shadow: 1px 2px 30px 4px rgba(12, 12, 12, 0.2);
     position: absolute;
     top: 20px;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
+    left: 0;
+    right: 0;
+    margin-left: auto;
     margin-right: auto;
     padding: 2px 20px 10px 20px;
     box-sizing: border-box;
@@ -888,14 +886,13 @@ h3 {
     text-align: center;
     width: 65px;
     height: 16px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #6070ff;
-
   }
 
   .popup .text {
@@ -928,7 +925,6 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .close {
@@ -952,12 +948,12 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #396DF2;
+    color: #396df2;
     overflow-y: hidden;
   }
 
@@ -966,38 +962,41 @@ h3 {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 20px;
-   box-sizing: border-box;
+    box-sizing: border-box;
   }
 
   .langs {
     margin-bottom: 20px;
   }
-  .items1{
+
+  .items1 {
     width: 88px;
     height: 16px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #7A869A;
-    
+    color: #7a869a;
   }
-  .itemse{
+
+  .itemse {
     width: 55px;
     height: 16px;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Helvetica, Arial, Verdana, Tahoma, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #344563;  
+    color: #344563;
   }
-  .smal-div{
+
+  .smal-div {
     display: flex;
     flex-direction: column;
   }
-  #close{
+
+  #close {
     position: absolute;
     top: 40px;
     left: 430px;
@@ -1010,11 +1009,13 @@ h3 {
     display: none;
   }
 }
-#close{
+
+#close {
   display: none;
 }
-.error{
-  color: #ffffff;
+
+.error {
+  color: #fff;
   text-align: center;
   font-family: "Lucida Console", "Courier New", monospace;
   display: none;
