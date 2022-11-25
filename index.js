@@ -91,10 +91,24 @@ function error() {
 document.getElementById('myForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.getElementById('myForm').elements[1].value;
-
+  const name = document.getElementById('myForm').elements[0].value;
+  const texte = document.getElementById('myForm').elements[0].value;
+  let storage = {name : name ,email:email,text:texte }
   if (email === email.toLowerCase()) {
     document.getElementById('myForm').submit();
   } else {
     error();
   }
 });
+
+
+
+function checkKey(){
+  const email = document.getElementById('myForm').elements[1].value;
+  const name = document.getElementById('myForm').elements[0].value;
+  const texte = document.getElementById('myForm').elements[2].value;
+  let storage = {name : name ,email:email,text:texte }
+  storeForm(storage)
+}
+
+
