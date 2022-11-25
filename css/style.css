@@ -166,25 +166,25 @@ li {
   box-shadow: 0 5px 5px 3px #d3d3d3, 8px 3px 5px 4px #e9e8e8, 0 4px 6px 4px #ececec;
 }
 
-.container .project .item1 .image {
+.container .project .item1 .image1 {
   background-image: url("../img/Snapshoot Portfolio.png");
   width: 295px;
   height: 220px;
 }
 
-.container .project .item1 .image1 {
+.container .project .item1 .image2 {
   background-image: url("../img/Snapshoot.png");
   width: 295px;
   height: 220px;
 }
 
-.container .project .item1 .image4 {
+.container .project .item1 .image3 {
   background-image: url("../img/Portfolio.png");
   width: 295px;
   height: 220px;
 }
 
-.container .project .item1 .image3 {
+.container .project .item1 .image4 {
   background-image: url("../img/last.png");
   width: 295px;
   height: 220px;
@@ -699,40 +699,22 @@ h3 {
     height: 490px;
   }
 
-  .image-image {
-    content: url("../img/nature.png");
-    width: 50vw;
-    height: 448px;
-    object-fit: contain;
-  }
-
-  .container .project .item1 .image {
-    display: none;
-  }
-
-  .container .project .item1 .image1 {
-    display: none;
-  }
-
   .image-image1 {
-    content: url("../img/desk-1.png");
-    width: 50vw;
-    height: 448px;
-    object-fit: contain;
-  }
-
-  .container .project .item1 .image4 {
-    display: none;
-  }
-
-  .image-image4 {
     content: url("../img/desk-2.png");
     width: 50vw;
     height: 448px;
     object-fit: contain;
   }
 
-  .image-image3 {
+  .container .project .item1 .image1 {
+    display: none;
+  }
+
+  .container .project .item1 .image2 {
+    display: none;
+  }
+
+  .image-image2 {
     content: url("../img/desk-3.png");
     width: 50vw;
     height: 448px;
@@ -740,6 +722,24 @@ h3 {
   }
 
   .container .project .item1 .image3 {
+    display: none;
+  }
+
+  .image-image3 {
+    content: url("../img/Portfolio.png");
+    width: 50vw;
+    height: 448px;
+    object-fit: contain;
+  }
+
+  .image-image4 {
+    content: url("../img/desk-1.png");
+    width: 50vw;
+    height: 448px;
+    object-fit: contain;
+  }
+
+  .container .project .item1 .image4 {
     display: none;
   }
 
