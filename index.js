@@ -33,7 +33,6 @@ const content = {
 function spreadB(arg) {
   const btn = document.getElementById(arg);
   const spreads = document.querySelector('.popup');
-  const btns = document.getElementsByClassName('close');
 
   function appear() {
     spreads.style.display = 'block';
@@ -72,15 +71,13 @@ function spreadB(arg) {
   </div>
  </div>`;
 
-  //btns.addEventListener('click', disapear);
+  // btns.addEventListener('click', disapear);
 }
 
-
-function dani (){
+function dani() {
   document.querySelector('.popup').style.display = 'none';
   document.querySelector('.container').style.filter = 'blur(0px)';
   document.querySelector('.headline').style.filter = 'blur(0px)';
-  document.getElementsByClassName('close').style.display = 'none';
 }
 
 for (let i = 1; i <= 4; i += 1) {
@@ -124,6 +121,7 @@ function checkKey() {
 
 if (document.getElementById('myForm').elements[1].value === true) {
   checkKey();
+  dani();
 }
 
 storeForm();
