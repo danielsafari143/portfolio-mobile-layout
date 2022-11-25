@@ -25,6 +25,16 @@ html {
   justify-content: center;
 }
 
+.elt {
+  animation: moves 2s;
+}
+
+@keyframes moves {
+  0% { margin-top: 0; }
+  75% { padding: 0; }
+  100% { margin-top: 50px; }
+}
+
 .logo-element {
   display: flex;
   flex-direction: row;
@@ -148,6 +158,12 @@ li {
   padding: 10px;
   box-sizing: border-box;
   background-color: #fff;
+  transition: padding 1s, box-shadow 1s;
+}
+
+.container .project .item:hover {
+  padding: 15px;
+  box-shadow: 0 5px 5px 3px #d3d3d3, 8px 3px 5px 4px #e9e8e8, 0 4px 6px 4px #ececec;
 }
 
 .container .project .item1 .image1 {
@@ -848,6 +864,12 @@ h3 {
 
   .nav-menu-link {
     text-decoration: none;
+  }
+
+  .nav-menu-link:hover {
+    background-color: #396df2;
+    padding: 10px;
+    color: white;
   }
 
   .header-img {
