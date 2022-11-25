@@ -110,3 +110,17 @@ function storeForm(storData) {
     document.getElementById('myForm').elements[2].value = prevData.text;
   }
 }
+
+function checkKey() {
+  const email = document.getElementById('myForm').elements[1].value;
+  const name = document.getElementById('myForm').elements[0].value;
+  const texte = document.getElementById('myForm').elements[2].value;
+  const storage = { name, email, text: texte };
+  storeForm(storage);
+}
+
+if (document.getElementById('myForm').elements[1].value === true) {
+  checkKey();
+}
+
+storeForm();
