@@ -39,7 +39,6 @@ function spreadB(arg) {
     spreads.style.display = 'block';
     document.querySelector('.container').style.filter = 'blur(5px)';
     document.querySelector('.headline').style.filter = 'blur(5px)';
-    //document.getElementById('close').style.display = 'block';
   }
 
   btn.addEventListener('click', appear);
