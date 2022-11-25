@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header  class="header-element">
+    <header  class="header-element" id="header-el">
         <div class="logo-element">
              <a href="#"><img class="headline-image" src="img/My Logo.png"></a>
              <nav>
@@ -41,6 +41,24 @@
                  </div>   
          </div>
      </header>
+     <div class="smal-div">
+        <img id = "close" class="close" src="img/Icons.png" alt="close">
+        <div class="popup item1 item">
+            <div>
+                <div class="title-section">
+                    <h3 class="title">Tonic</h3>
+                    
+                </div>
+        
+                <ul class="link"></ul>
+                <div>
+                <img src="" alt="">
+                <div class="text"></div>
+                <ul></ul>
+                </div>
+            </div>
+        </div>
+     </div>
     <div class="container">
         <div class="project">
             
@@ -61,8 +79,7 @@
                         </div >
                         <div class="item3">
                             <div></div>
-                            <p>2015</p>
-                            
+                            <p>2015</p> 
                         </div>
                     </div>
                     <div class="text">
@@ -76,7 +93,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn"><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn " id="card-1" onclick="spreadB('card-1')"><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
             </div>
@@ -113,10 +130,10 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn card-2" id="card-2" onclick="spreadB('card-2')" ><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
-                <img class="image-image1">
+                <img class="image-image1 ">
             </div>
 
 
@@ -152,7 +169,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn " id="card-3" onclick="spreadB('card-3')"><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
             </div>
@@ -189,7 +206,7 @@
                         <p>javaScript</p>
                     </div>
                     <div>
-                        <button class="btn" ><a class="btn-text" href="#">See Project</a></button>
+                        <button class="btn " id="card-4" onclick="spreadB('card-4')"><a class="btn-text" href="#header-el">See Project</a></button>
                     </div>
                 </div>
                 <img class="image-image3">
@@ -247,7 +264,7 @@
             </div>
            </div>
     </div>
-    <form class="former-block" action="https://formspree.io/f/xlevagje" method="POST">
+    <form class="former-block" action="https://formspree.io/f/xlevagje" method="POST" id="myForm">
                 <div class="form-block">
                     <section>
                         <h2 class="contact">Contact me</h2>
@@ -269,14 +286,17 @@
                                         <textarea class="text-area" name="text_area" id="text_area" cols="30" rows="10" maxlength="500"
                                         placeholder="Write your message here" required></textarea>
                                     </li>
+                                    <p class="error">Invalid email address</p>
                                     <li  class="submit-button input-email-li">
                                         <button class="form-btn" type="submit">
                                             Get in touch
                                         </button>
                                     </li>
+                                   
                                 </ul>
                            </section>
                 </div>
              </form>
             </body>
+            <script src="index.js"></script>
             </html>
