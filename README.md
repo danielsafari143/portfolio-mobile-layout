@@ -1,4 +1,7 @@
 # microverse-ltr
+## Hi 👋, I'm Safari a student at microverse
+
+I’m currently working on [ portfolio-project ](https://danielsafari143.github.io/)
 
 # Built With
 

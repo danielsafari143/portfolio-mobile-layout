@@ -7,21 +7,21 @@ const content = {
     language: ['html', 'css', 'javascript'],
   },
   'card-2': {
-    title: 'Tonic',
+    title: 'Multi-Post Stories',
     project: ['canopi', 'Back end', '2015'],
     image: 'img/desk-3.png',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     language: ['html', 'css', 'javascript'],
   },
   'card-3': {
-    title: 'Tonic',
+    title: 'Facebook 360',
     project: ['canopi', 'Back end', '2015'],
     image: 'img/Portfolio.png',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     language: ['html', 'css', 'javascript'],
   },
   'card-4': {
-    title: 'Tonic',
+    title: 'Uber Navigation',
     project: ['canopi', 'Back end', '2015'],
     image: 'img/desk-1.png',
     text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
@@ -29,11 +29,52 @@ const content = {
   },
 
 };
+const project = document.getElementById('project');
+let boucle = 0;
+
+Object.keys(content).forEach((codes) => {
+  boucle += 1;
+  project.innerHTML += `<div class="item1 item">
+  <div class="image${boucle}"></div>
+  <img class="image-image${boucle}">
+  <div class="content">
+      <h1>${content[codes].title}</h1>
+      <div class="experiance">
+          <div class="item1">
+              <p>CANOPY</p>
+              
+          </div>
+          <div class="item2">
+              <div></div>
+              <p>Back End Dev</p>
+             
+          </div >
+          <div class="item3">
+              <div></div>
+              <p>2015</p> 
+          </div>
+      </div>
+      <div class="text">
+          <p>
+              A daily selection of privately personalized reads; no accounts or sign-ups required.
+          </p>
+      </div>
+      <div class="langages">
+          <p>html</p>
+          <p>css</p>
+          <p>javaScript</p>
+      </div>
+      <div>
+          <button class="btn " id="card-${boucle}" onclick="spreadB('card-${boucle}')"><a class="btn-text" href="#header-el">See Project</a></button>
+      </div>
+  </div>
+  </div>
+  `;
+});
 
 function spreadB(arg) {
   const btn = document.getElementById(arg);
   const spreads = document.querySelector('.popup');
-  const btns = document.getElementsByClassName('close');
 
   function appear() {
     spreads.style.display = 'block';
@@ -72,15 +113,13 @@ function spreadB(arg) {
   </div>
  </div>`;
 
-  //btns.addEventListener('click', disapear);
+  // btns.addEventListener('click', disapear);
 }
 
-
-function dani (){
+function dani() {
   document.querySelector('.popup').style.display = 'none';
   document.querySelector('.container').style.filter = 'blur(0px)';
   document.querySelector('.headline').style.filter = 'blur(0px)';
-  document.getElementsByClassName('close').style.display = 'none';
 }
 
 for (let i = 1; i <= 4; i += 1) {
@@ -124,6 +163,7 @@ function checkKey() {
 
 if (document.getElementById('myForm').elements[1].value === true) {
   checkKey();
+  dani();
 }
 
 storeForm();
