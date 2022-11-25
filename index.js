@@ -33,18 +33,13 @@ const content = {
 function spreadB(arg) {
   const btn = document.getElementById(arg);
   const spreads = document.querySelector('.popup');
-  const btns = document.getElementById('close');
-
-  function disapear() {
-    spreads.style.display = 'none';
-    document.querySelector('.container').style.filter = 'blur(0px)';
-    document.getElementById('close').style.display = 'none';
-  }
+  const btns = document.getElementsByClassName('close');
 
   function appear() {
     spreads.style.display = 'block';
     document.querySelector('.container').style.filter = 'blur(5px)';
-    document.getElementById('close').style.display = 'block';
+    document.querySelector('.headline').style.filter = 'blur(5px)';
+    //document.getElementById('close').style.display = 'block';
   }
 
   btn.addEventListener('click', appear);
@@ -52,7 +47,7 @@ function spreadB(arg) {
   spreads.innerHTML = `<div class='main-pop'>
   <div class='title-section'>
       <h3 class='title'>${content[arg].title}</h3>
-      
+      <img id = "clos" class="close" src="img/Icons.png" onclick = "dani()" alt="close">
   </div>
   <ul class='link'>
   <li class='itemse'>${content[arg].project[0]}</li>
@@ -78,8 +73,17 @@ function spreadB(arg) {
   </div>
  </div>`;
 
-  btns.addEventListener('click', disapear);
+  //btns.addEventListener('click', disapear);
 }
+
+
+function dani (){
+  document.querySelector('.popup').style.display = 'none';
+  document.querySelector('.container').style.filter = 'blur(0px)';
+  document.querySelector('.headline').style.filter = 'blur(0px)';
+  document.getElementsByClassName('close').style.display = 'none';
+}
+
 for (let i = 1; i <= 4; i += 1) {
   spreadB(`card-${[i]}`);
 }
