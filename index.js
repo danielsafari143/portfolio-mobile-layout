@@ -91,9 +91,7 @@ function error() {
 document.getElementById('myForm').addEventListener('submit', (e) => {
   e.preventDefault();
   const email = document.getElementById('myForm').elements[1].value;
-  const name = document.getElementById('myForm').elements[0].value;
-  const texte = document.getElementById('myForm').elements[0].value;
-  let storage = {name : name ,email:email,text:texte }
+
   if (email === email.toLowerCase()) {
     document.getElementById('myForm').submit();
   } else {
@@ -101,14 +99,14 @@ document.getElementById('myForm').addEventListener('submit', (e) => {
   }
 });
 
-
-
-function checkKey(){
-  const email = document.getElementById('myForm').elements[1].value;
-  const name = document.getElementById('myForm').elements[0].value;
-  const texte = document.getElementById('myForm').elements[2].value;
-  let storage = {name : name ,email:email,text:texte }
-  storeForm(storage)
+function storeForm(storData) {
+  const newData = JSON.stringify(storData);
+  if (typeof storData !== 'undefined') {
+    localStorage.setItem('data', newData);
+  } else {
+    const prevData = JSON.parse(localStorage.getItem('data'));
+    document.getElementById('myForm').elements[0].value = prevData.name;
+    document.getElementById('myForm').elements[1].value = prevData.email;
+    document.getElementById('myForm').elements[2].value = prevData.text;
+  }
 }
-
-
